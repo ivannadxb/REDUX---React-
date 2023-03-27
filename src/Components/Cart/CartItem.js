@@ -2,7 +2,7 @@ import dataDishes from "../../data/dataDishes";
 import { useDispatch } from "react-redux";
 import { removeItemFromCart } from "../../redux/cartSlice";
 
-const CartItem = (cartItem) => {
+const CartItem = ({cartItem}) => {
 
     const dishes = dataDishes.find(item => item.id === cartItem.dishId);
     const dispatch = useDispatch();
