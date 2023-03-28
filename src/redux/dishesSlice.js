@@ -8,7 +8,7 @@ export const dishesSlice = createSlice({
     },
     reducers: {
       filterCategory: (state, action) => {
-        state.selectCategory = action.payload;
+        state.selectedCategory = action.payload;
       }
     }
 })
